@@ -18,7 +18,7 @@ for fileName in os.listdir(petitionsPath):
     with open(f'{petitionsPath}/{fileName}', 'r', encoding='utf-8') as fp:
         for line in fp.readlines():
             lineDict = literal_eval(line)
-            txt = utils.normalize_text(lineDict['title'])+'  '+lineDict['content']
+            txt = lineDict['category']+'  '+utils.normalize_text(lineDict['title'])+'  '+lineDict['content']
             if delTxt in txt:
                 txt =txt.replace(delTxt, "")
             txtList.append(txt)
