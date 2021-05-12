@@ -3,3 +3,6 @@
 inputFileName에 csv 파일경로 지정
 
 in[6]: 에서 num.append(len(sample1)-1) 주석제거 하고 사용하기! (중요)
+
+
+이전 파일 잘못된 부분 있어서 바꿨습니다.
