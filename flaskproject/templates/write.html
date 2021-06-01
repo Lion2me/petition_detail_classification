@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <title>write page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -19,6 +20,28 @@
         <section>
             <form class="form-horizontal" method="post" action="/write">
                 <fieldset>
+
+                    <div class="form-group">
+                        <select name = "category">
+                            <option value ="politics">정치개혁</option>
+                            <option value ="diplomacy">외교/통일/국방</option>
+                            <option value ="job">일자리</option>
+                            <option value ="future">미래</option>
+                            <option value ="growth_engine">성장동력</option>
+                            <option value ="village">농산어촌</option>
+                            <option value ="health">보건복지</option>
+                            <option value ="edu">육아/교육</option>
+                            <option value ="safety">안전/환경</option>
+                            <option value ="fertility">저출산/고령화대책</option>
+                            <option value ="admin">행정</option>
+                            <option value ="pet">반려동물</option>
+                            <option value ="traffic">교통/건축/국토</option>
+                            <option value ="ecomomic">경제민주화</option>
+                            <option value ="equality">인권/성평등</option>
+                            <option value ="culture">문화/예술/체육/언론</option>
+                            <option value ="etc">기타</option>
+                        </select>
+                    </div>
                     <div class="form-group">
                         <label class="col-md-12" for="txtTitle">Title</label>
                         <div class="col-md-12">
@@ -31,6 +54,7 @@
                             <textarea class="form-control" id="txtPost" name="content" placeholder="내용을 입력하세요." style="height:260px;" required></textarea>
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label class="col-md-12 control-label" for="singlebutton"></label>
                         <div class="col-md-12">
