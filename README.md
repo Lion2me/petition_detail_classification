@@ -3,7 +3,7 @@
 ##주제 : 국민청원 2차 분류 모델 개발
 
 과정 : 
-![ex_screenshot](./process.png)
+![ex_screenshot](process.png)
 
 내용 :
 
